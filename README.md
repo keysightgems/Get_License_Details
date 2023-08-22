@@ -1,7 +1,7 @@
 # Get_License_Details
 Get the License details based on the chassis/server IP and return the results into the xls/csv file.
 # Key Features
-Get the license details based on the chassis/server IP
+Get the license details based on the chassis/server IP\
 Generate Excel/CSV file along with the license details based on the input.
 # Required Python Packages
 pip install pandas\
