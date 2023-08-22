@@ -4,10 +4,10 @@ Get the License details based on the chassis/server IP and return the results in
 Get the license details based on the chassis/server IP
 Generate Excel/CSV file along with the license details based on the input.
 # Required Python Packages
-pip install pandas
-pip install logging
-pip install requests
-pip install json
+pip install pandas\
+pip install logging\
+pip install requests\
+pip install json\
 pip install time
 # Import the packages
 from get_license_details import IxChassisDetails
