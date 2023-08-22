@@ -2,7 +2,7 @@
 Get the License details based on the chassis/server IP and return the results into the xls/csv file.
 # Key Features
 Get the license details based on the chassis/server IP\
-Generate Excel/CSV file along with the license details based on the input.
+Generate Excel/CSV files with the license details based on the input.
 # Required Python Packages
 pip install pandas\
 pip install logging\
@@ -22,4 +22,12 @@ session = IxChassisDetails("admin", "admin", chassis_ip="10.39.64.169")
 session.csv_xlsx_retrieve_license('chassis_license', file_format='csv')
 # Supported Server Versions
 Linux API server\
-#Currently we dont have support on Windows because the License utility not integrated on the windows API server.
+#Currently we don't have support on Windows because the License utility is not integrated into the Windows API server.
+# Script Execution Time
+The execution time will increase based on the activation code count.\
+Rest API call takes 30 seconds to execute each activation code.\
+For example, sending a list of 5 activation codes will take an execution time from 2.5 to 3 minutes.\
+Backend executing each activation code at a time not the list of activation codes\
+Example: self.http_request_license(
+        'POST', uri, payload={'activationCode': active_code}
+        )
