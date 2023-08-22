@@ -13,7 +13,7 @@ pip install time
 from get_license_details import IxChassisDetails
 # Run script
 from get_license_details import IxChassisDetails
-#Get the License details based on the API server IP (activation_code parameter is mandatory)
+##Get the License details based on the API server IP (activation_code parameter is mandatory)
 session = IxChassisDetails("admin", "admin", server_ip="10.39.71.237", ixnetwork_type="linux")
 session.csv_xlsx_retrieve_license('chassis_license', file_format='csv', activation_code=['7724-8DB6-A2F0-A56C', 'C415-2B94-C0ED-3E56', '9C47-D170-353C-947F', 'C1FA-E892-F27E-28FB', '8E35-595C-5214-7D69'])
 
